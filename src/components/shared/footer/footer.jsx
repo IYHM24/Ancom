@@ -7,9 +7,9 @@ import { mapRoutes } from '@/utils/configRoutes'
 
 export const Footer = () => {
     return (
-        <footer className="!border-t  !border-gray-500 dark:!border-gray-800">
+        <footer className="!border-t max-md:!p-2 !border-gray-500 dark:!border-gray-800">
             <div className="!mx-auto !container !flex !flex-col !gap-8 !py-8 md:!flex-row md:!py-12">
-                <div className="!flex-1 !!space-y-4">
+                <div className="!flex-1">
                     <h2 className="!font-bold">Ancom</h2>
                     <p className="!text-gray-700 dark:!text-gray-300 !text-sm text-muted-foreground">Soluciones pioneras para la era digital</p>
                 </div>

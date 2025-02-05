@@ -19,7 +19,7 @@ export const Navbar = () => {
         <div className='flex gap-5'>
 
           {/* logo */}
-          <Link to="/" className='flex items-center'>
+          <Link to="/" className='flex items-center' onClick={()=>{setAbierto(false)}}>
             <Simbolo stroke={"white"} fill={colorMode == "light" ? "black" : "white"} width={45} />
             <h1 className='!font-bold !text-xl text-black dark:!text-white'> Ancom </h1>
           </Link>
@@ -41,11 +41,19 @@ export const Navbar = () => {
           </Button>
         </div>
       </div>
+
       {/* rutas - mobile */}
       <div className={` ${!abierto && "hidden"} md:hidden top-20 fixed z-10 w-full !backdrop-blur h-[200vh] ${colorMode == "light" ? "bg-navbar-light" : "bg-navbar-dark"}`}>
         <div className={` ${colorMode == "light" ? "bg-white" : "bg-black"} flex flex-col !p-2 gap-2`}>
           {mapRoutes.map((item, indice) => (
-            <Link className={`!text-gray-700 dark:!text-gray-300 align-bottom w-max h-max !font-light !border ${colorMode == "light" ? "!border-black" : "!border-white "} rounded-lg !p-2 text-center min-w-full `} key={"item-nav-" + indice} to={item.path.path}> {item.nombre} </Link>
+            <Link 
+              className={`!text-gray-700 dark:!text-gray-300 align-bottom w-max h-max !font-light !border ${colorMode == "light" ? "!border-black" : "!border-white "} rounded-lg !p-2 text-center min-w-full `}
+              key={"item-nav-" + indice} 
+              to={item.path.path}
+              onClick={()=>{setAbierto(false)}}
+            > 
+              {item.nombre} 
+            </Link>
           ))}
         </div>
       </div>

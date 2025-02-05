@@ -1,7 +1,7 @@
 //importacion componentes
 import { ProfeAndres } from "@/pages/ProfeAndres/profeAndres";
 import { Nosotros } from "@/pages/Nosotros/nosotros"; 
-import { Planes } from "@/pages/Planes/Planes";
+import { Planes } from "@/pages/Planes/planes";
 import { Proyectos } from "@/pages/Proyectos/proyectos";
 
 //importacion iconos

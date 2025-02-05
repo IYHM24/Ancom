@@ -57,7 +57,7 @@ export const Especialidades = () => {
                     {cubes.map((cube, index) => (
                         <Tooltip key={"tooltip-"+index} content={cube.name}>
                             <div
-                                className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === index ? "translate-y-[-40px] rotate-x-12" : ""
+                                className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === index ? "md:translate-y-[-40px]" : ""
                                     }`}
                                 onMouseEnter={() => setHovered(index)}
                                 onMouseLeave={() => setHovered(null)}

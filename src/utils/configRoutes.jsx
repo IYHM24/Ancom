@@ -37,7 +37,7 @@ export const mapRoutes = [
         }
     },
     {
-        nombre: "Profe Andres",
+        nombre: "Canal",
         path:{
             path:"/canal",
             component: ProfeAndresComponente

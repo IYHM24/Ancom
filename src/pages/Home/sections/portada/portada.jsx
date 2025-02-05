@@ -15,7 +15,7 @@ export const Portada = () => {
                 type={colorMode == 'dark'? "square" : "cobweb"}
                 bg={true} 
             /> 
-            <div className='!backdrop-blur'>
+            <div className=''>
                 <motion.div
                     initial={{ opacity: 0, y: 100 }} // Empieza invisible y desplazado hacia abajo
                     animate={{ opacity: 1, y: 0 }}  // Se hace visible y sube

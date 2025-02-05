@@ -13,11 +13,6 @@ export const Navbar = () => {
   const { colorMode } = useColorMode();
   const [abierto, setAbierto] = useState(false);
 
-
-  /*   const style = {
-      backgroundColor: colorMode == "light"? "#ffffff66" : "#27272a87"
-    }
-   */
   return (
     <header className={` ${colorMode == "light" ? abierto? "bg-white" :  "bg-navbar-light" : abierto? "bg-black" : "bg-navbar-dark" } shadow-sm !sticky !top-0 !z-50 !w-full !border-gray-200 dark:!border-gray-800 backdrop-blur`}>
       <div className='!container !mx-auto flex justify-between max-md:!p-5'>

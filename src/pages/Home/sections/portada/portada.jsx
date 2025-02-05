@@ -20,9 +20,9 @@ export const Portada = () => {
                     initial={{ opacity: 0, y: 100 }} // Empieza invisible y desplazado hacia abajo
                     animate={{ opacity: 1, y: 0 }}  // Se hace visible y sube
                     transition={{ duration: 1, ease: "easeOut" }} // Duración y tipo de animación
-                    className='!animate-fade-in !gap-10 !mx-auto container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32'
+                    className='!animate-fade-in !gap-10 !mx-auto container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center space-y-8 py-24 text-center md:py-32'
                 >
-                    <div className='flex flex-col gap-5 w-3xl'>
+                    <div className='flex flex-col gap-5'>
                         <h2 className='!bg-clip-text !text-3xl !font-bold !tracking-tight sm:!text-4xl md:!text-5xl lg:!text-6xl'>Transformamos Tu Idea</h2>
                         <p className='!text-xl text-center !text-gray-700 dark:!text-gray-300'> En Ancom diseñamos software a la medida que potencia tus operaciones. Nuestra experiencia y compromiso con la excelencia nos permiten ofrecer resultados confiables, ágiles y escalables para tu crecimiento.</p>
                     </div>

@@ -48,12 +48,12 @@ export const Especialidades = () => {
         <div className='!mb-25'>
             <div className="!container !space-y-16 py-24 md:!py-32 !mx-auto">
                 <div className="!mx-auto !max-w-[58rem] !text-center !flex !justify-center !flex-col">
-                    <h2 className="!font-bold !text-5xl !leading-[1.1] sm:!text-3xl md:!text-5xl">Trabajamos con una gran variedad de tecnologias</h2>
+                    <h2 className="!font-bold !text-5xl !leading-[1.1] sm:!text-sm md:!text-5xl">Trabajamos con una gran variedad de tecnologias</h2>
                     <p className="mt-4 !text-gray-600 dark:!text-gray-400 sm:text-lg !text-lg">
                         Proveemos desarollo de calidad con la mayoria de tecnologias del mercado al igual nos especializamos en las siguientes tecnologias
                     </p>
                 </div>
-                <div className="flex justify-center items-center perspective-1000">
+                <div className="flex justify-center items-center flex-wrap">
                     {cubes.map((cube, index) => (
                         <Tooltip key={"tooltip-"+index} content={cube.name}>
                             <div

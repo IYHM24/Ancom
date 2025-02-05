@@ -10,7 +10,7 @@ export const Portada = () => {
     const { colorMode } = useColorMode();
 
     return (
-        <div className='relative rounded-4xl'>
+        <div className='relative rounded-4xl !mb-25'>
             <ParticlesBg 
                 type={colorMode == 'dark'? "square" : "cobweb"}
                 bg={true} 
@@ -20,7 +20,7 @@ export const Portada = () => {
                     initial={{ opacity: 0, y: 100 }} // Empieza invisible y desplazado hacia abajo
                     animate={{ opacity: 1, y: 0 }}  // Se hace visible y sube
                     transition={{ duration: 1, ease: "easeOut" }} // Duración y tipo de animación
-                    className='!animate-fade-in !gap-10 !mx-auto container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center space-y-8 py-24 text-center md:py-32'
+                    className='max-md:!p-5 !animate-fade-in !gap-10 !mx-auto container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center space-y-8 py-24 text-center md:py-32'
                 >
                     <div className='flex flex-col gap-5'>
                         <h2 className='!bg-clip-text !text-3xl !font-bold !tracking-tight sm:!text-4xl md:!text-5xl lg:!text-6xl'>Transformamos Tu Idea</h2>

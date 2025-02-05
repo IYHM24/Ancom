@@ -10,14 +10,14 @@ export const Ready = () => {
   }
 
   return (
-    <section> {/* className="!border-t !border-gray-400 dark:!border-gray-800"> */}
+    <section className="!border-t !border-gray-400 dark:!border-gray-800">
       <div className='!w-full'  style={style}>
         <motion.div
            initial={{ opacity: 0, y: 50 }} // Empieza invisible y desplazado hacia abajo
            whileInView={{ opacity: 1, y: 0 }} // Se hace visible cuando entra en la pantalla
            transition={{ duration: 0.8, ease: "easeOut" }} // Duración y suavidad de la animación
            viewport={{ once: true }}
-          className="!mx-auto !container !flex !flex-col !items-center !gap-4 !py-24 !text-center md:!py-32 "
+          className="max-md:!p-5 !mx-auto !container !flex !flex-col !items-center !gap-4 !py-24 !text-center md:!py-32 "
         >
           <h2 className="!font-bold !text-3xl !leading-[1.1] sm:!text-3xl md:!text-5xl">
             ¿Listo para revolucionar tu negocio?

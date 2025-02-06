@@ -80,7 +80,7 @@ export const ParticlesBackground = ({ particlesColor, lineColor }) => {
                 density: {
                     enable: true,
                 },
-                value: window.innerWidth > 768 ? 100 : 50,
+                value: window.innerWidth > 768 ? 100 : 10,
             },
             opacity: {
                 value: 0.5,

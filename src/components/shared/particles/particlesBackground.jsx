@@ -91,7 +91,7 @@ export const ParticlesBackground = ({ particlesColor, lineColor }) => {
                 value: { min: 3, max: 5 },
             },
         },
-        detectRetina: true,
+        detectRetina:  window.innerWidth > 768 ? true : false,
     }
 
     if (init) {

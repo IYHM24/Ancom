@@ -33,7 +33,6 @@ export const ParticlesBackground = ({ particlesColor, lineColor }) => {
     };
 
     const options = {
-        fpsLimit: 120,
         interactivity: {
             events: {
                 onClick: {

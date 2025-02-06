@@ -4,6 +4,10 @@ import { VscTools } from "react-icons/vsc";
 import { LuBrain } from "react-icons/lu";
 import { TfiHelpAlt } from "react-icons/tfi";
 import { motion } from 'framer-motion';
+import { TbBrush } from "react-icons/tb";
+import { FaWordpress } from "react-icons/fa";
+import { RiShoppingBag4Line } from "react-icons/ri";
+import { TbMessageChatbot } from "react-icons/tb";
 
 export const features = [
     {
@@ -26,6 +30,26 @@ export const features = [
       description: "asesoría especializada en desarrollo. Nuestro equipo de expertos analiza las necesidades para ofrecer soluciones estratégicas y a la medida del negocio.",
       icon: TfiHelpAlt,
     },
+    {
+      name: "Diseño web",
+      description: "Creamos experiencias visuales únicas que optimizan la interacción de tus usuarios, adaptadas a cada dispositivo y necesidad.",
+      icon: TbBrush,
+    },
+    {
+      name: "Wordpress",
+      description: "Potenciamos tu presencia en línea con soluciones robustas y personalizadas en WordPress, fáciles de administrar y escalar.",
+      icon: FaWordpress ,
+    },
+    {
+      name: "E-comerce",
+      description: "Construimos tiendas online intuitivas y seguras que maximizan tu alcance y aumentan las ventas, con integración total.",
+      icon: RiShoppingBag4Line ,
+    },
+    {
+      name: "Chat/Voz Bots",
+      description: "Desarrollamos bots inteligentes que automatizan la comunicación con tus clientes, brindando respuestas rápidas y precisas.",
+      icon: TbMessageChatbot ,
+    }
   ]
 
 export const NuestrosServicios = () => {

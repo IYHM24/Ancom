@@ -77,6 +77,7 @@ export const Especialidades = () => {
                     ))}
                     <Tooltip key={"tooltip-mas"} content={"ver mas"}>
                             <Link
+                                to={"/especialidades"}
                                 className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === "m" ? "md:translate-y-[-40px]" : ""
                                     }`}
                                 onMouseEnter={() => setHovered("m")}

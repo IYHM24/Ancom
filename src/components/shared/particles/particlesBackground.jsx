@@ -8,9 +8,6 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 import { useColorMode } from '@/components/ui/color-mode'
 
 export const ParticlesBackground = ({ particlesColor, lineColor }) => {
-    
-    debugger
-
     const [init, setInit] = useState(false);
 
     // this should be run only once per application lifetime

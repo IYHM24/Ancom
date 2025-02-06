@@ -33,7 +33,7 @@ export const ParticlesBackground = ({ particlesColor, lineColor }) => {
     };
 
     const options = {
-        fpsLimit: 60,
+        fpsLimit: 120,
         interactivity: {
             events: {
                 onClick: {
@@ -80,7 +80,7 @@ export const ParticlesBackground = ({ particlesColor, lineColor }) => {
                 density: {
                     enable: true,
                 },
-                value: 80,
+                value: window.innerWidth > 768 ? 100 : 50,
             },
             opacity: {
                 value: 0.5,

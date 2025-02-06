@@ -5,7 +5,11 @@ import { FaNodeJs } from 'react-icons/fa';
 import { SiSpringboot } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
+import { DiDjango } from "react-icons/di";
+import { IoIosMore } from "react-icons/io";
 import { Tooltip } from "@/components/ui/tooltip"
+import {Link} from "react-router-dom"
+
 
 export const Especialidades = () => {
 
@@ -39,7 +43,12 @@ export const Especialidades = () => {
             name: "Azure",
             icon: VscAzure,
             lenguaje: ["Cloud"]
-        }
+        },
+        {
+            name: "Django",
+            icon: DiDjango,
+            lenguaje: ["Python"]
+        },
 
     ];
     const [hovered, setHovered] = useState(null);
@@ -55,7 +64,7 @@ export const Especialidades = () => {
                 </div>
                 <div className="flex justify-center items-center flex-wrap">
                     {cubes.map((cube, index) => (
-                        <Tooltip key={"tooltip-"+index} content={cube.name}>
+                        <Tooltip key={"tooltip-" + index} content={cube.name}>
                             <div
                                 className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === index ? "md:translate-y-[-40px]" : ""
                                     }`}
@@ -66,6 +75,16 @@ export const Especialidades = () => {
                             </div>
                         </Tooltip>
                     ))}
+                    <Tooltip key={"tooltip-mas"} content={"ver mas"}>
+                            <Link
+                                className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === "m" ? "md:translate-y-[-40px]" : ""
+                                    }`}
+                                onMouseEnter={() => setHovered("m")}
+                                onMouseLeave={() => setHovered(null)}
+                            >
+                                <IoIosMore />
+                            </Link>
+                    </Tooltip>
                 </div>
             </div>
         </div>

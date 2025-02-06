@@ -3,7 +3,9 @@ import { Button } from '@chakra-ui/react'
 import { FaArrowRight } from 'react-icons/fa'
 import { useColorMode } from '@/components/ui/color-mode'
 import { motion } from "framer-motion";
-import ParticlesBg from "particles-bg";
+import { ParticlesBackground } from '@/components/shared/particles/particlesBackground';
+
+/* import ParticlesBg from "particles-bg"; */
 
 export const Portada = () => {
 
@@ -11,10 +13,13 @@ export const Portada = () => {
 
     return (
         <div className='relative rounded-4xl !mb-25'>
-            <ParticlesBg 
+           {/*  <ParticlesBg 
                 type={colorMode == 'dark'? "square" : "cobweb"}
                 bg={true} 
-            /> 
+                num={100}
+
+            />  */}
+            <ParticlesBackground particlesColor={colorMode == "dark" ? "#e6e6e6": "#000000"} lineColor={colorMode == "dark" ? "#e6e1e1": "#878787"} />
             <div className=''>
                 <motion.div
                     initial={{ opacity: 0, y: 100 }} // Empieza invisible y desplazado hacia abajo

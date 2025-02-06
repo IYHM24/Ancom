@@ -36,11 +36,11 @@ export const ParticlesBackground = ({ particlesColor, lineColor }) => {
         interactivity: {
             events: {
                 onClick: {
-                    enable: true,
+                    enable:  window.innerWidth > 768 ? true : false,
                     mode: "push",
                 },
                 onHover: {
-                    enable: true,
+                    enable: window.innerWidth > 768 ? true : false,
                     mode: "repulse",
                 },
             },

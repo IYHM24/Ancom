@@ -62,7 +62,7 @@ export const PreInicio = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
-                        className="!mb-16 !max-w-2xl !mx-auto text-center !text-gray-700 dark:!text-gray-300"
+                        className="!mb-16  !max-w-2xl !mx-auto text-center !text-gray-700 dark:!text-gray-300"
                     >
                         Desde 2022, hemos estado a la vanguardia del desarrollo de software personalizado, transformando ideas
                         innovadoras en soluciones tecnológicas robustas y escalables.

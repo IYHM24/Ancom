@@ -62,7 +62,7 @@ export const PreInicio = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
-                        className="!text-gray-700 dark:!text-gray-300 !mb-16 !max-w-2xl !mx-auto text-center"
+                        className="!mb-16 !max-w-2xl !mx-auto text-center !text-gray-700 dark:!text-gray-300"
                     >
                         Desde 2022, hemos estado a la vanguardia del desarrollo de software personalizado, transformando ideas
                         innovadoras en soluciones tecnológicas robustas y escalables.
@@ -77,7 +77,7 @@ export const PreInicio = () => {
                                 transition={{ delay: 0.4 + indice * 0.2, duration: 0.6 }}
                                 whileHover={{ scale: 1.05 }}
                                 key={indice}
-                                className="md:w-full !relative !overflow-hidden !rounded-lg !border !bg-background !p-8 !border-gray-500 dark:!border-gray-800 "
+                                className="flex gap-5 flex-col md:w-full !relative !overflow-hidden !rounded-lg !border !bg-background !p-8 !border-gray-500 dark:!border-gray-800 "
                             >
                                 <Subtitulo className={"!text-center"}>{carta.titulo}</Subtitulo>
                                 <Parrafo className={"!text-center"}>

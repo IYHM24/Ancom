@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { FaRobot,FaCode, FaLightbulb, FaBrain, FaRocket, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
+import { FaRobot, FaCode, FaLightbulb, FaBrain, FaRocket, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
 import { Section } from "@/components/shared/seccion/section"
 import profileIMG from "@/assets/creator/profile.jpg"
 
@@ -113,6 +113,29 @@ export const CreatorProfile = () => {
                             </p>
                             <div className="!text-4xl !text-right">"</div>
                         </motion.div>
+
+                        {/* Personal Quote */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="flex flex-col gap-2 !mt-8 bg-white dark:bg-black !p-6 !rounded-2xl !shadow-xl"
+                        >
+                            
+                            <p className="!italic !text-gray-700 dark:!text-gray-300">
+                                dev.andres.gutierrez@gmail.com
+                               
+                            </p>
+                            <p className="!italic">
+                                +57 350 693 0989
+                            </p>
+                            <p className="!italic">
+                                Colombia, Bogotá
+                            </p>
+                           
+                        </motion.div>
+
+
                     </motion.div>
 
                     {/* Right Column - Skills & Experience */}
@@ -173,7 +196,7 @@ export const CreatorProfile = () => {
                     </motion.div>
                 </div>
             </div>
-        </Section>
+        </Section >
     )
 }
 

@@ -67,6 +67,7 @@ export const Especialidades = () => {
 
     return (
         <Section className={"!mb-10"}>
+            <div  id="Especialidades"></div>
             <ElementosFlotantes />
             <div className="!max-w-6xl !mx-auto">
                 {/* Header */}
@@ -75,6 +76,7 @@ export const Especialidades = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     className="text-center !mb-16"
+                   
                 >
                     <h2 className="!text-4xl !font-bold !mb-4">Nuestras Tecnologías</h2>
                     <p className="!text-gray-700 dark:!text-gray-300 !max-w-2xl !mx-auto">

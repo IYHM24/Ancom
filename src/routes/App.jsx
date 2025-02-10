@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { mapRoutes } from '@/utils/configRoutes.jsx';
 import { Layout } from '@/container/layout';
 import { Home } from '@/pages/Home/home';
-import { Especialidades } from '@/pages/Especialidades/especialidades';
 import { useColorMode } from '@/components/ui/color-mode';
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
           {mapRoutes.map((ruta, index) => (
             <Route key={"ruta"+index} path={ruta.path.path} element={ruta.path.component()}/>
           ))}
-          <Route path='/especialidades' element={<Especialidades />}/>
           <Route path='*' element={<Home />}/>
         </Route>
       </Routes>

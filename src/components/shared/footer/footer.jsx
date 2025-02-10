@@ -6,6 +6,11 @@ import { mapRoutes } from '@/utils/configRoutes'
 
 
 export const Footer = () => {
+
+    const handleClick = () => {
+        window.scrollTo({ top: 0 });
+    };
+
     return (
         <footer className="!border-t max-md:!p-5 !border-gray-500 dark:!border-gray-800">
             <div className="!mx-auto !container !flex !flex-col !gap-8 !py-8 md:!flex-row md:!py-12">
@@ -31,7 +36,7 @@ export const Footer = () => {
                         <ul className="!space-y-3 !text-sm">
                             {mapRoutes.map((ruta, indice) => (
                                 <li key={"page-key-"+indice} >
-                                    <Link to={ruta.path.path} className="text-muted-foreground !transition-colors hover:!text-primary">
+                                    <Link onClick={handleClick} to={ruta.path.path} className="text-muted-foreground !transition-colors hover:!text-primary">
                                        {ruta.nombre}
                                     </Link>
                                 </li>

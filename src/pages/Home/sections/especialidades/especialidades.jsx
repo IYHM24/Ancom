@@ -13,6 +13,10 @@ import {Link} from "react-router-dom"
 
 export const Especialidades = () => {
 
+    const handleClick = () => {
+        window.scrollTo({ top: 0 });
+      };
+
     const cubes = [
         {
             name: "react",
@@ -66,7 +70,7 @@ export const Especialidades = () => {
                     {cubes.map((cube, index) => (
                         <Tooltip key={"tooltip-" + index} content={cube.name}>
                             <div
-                                className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === index ? "md:translate-y-[-40px]" : ""
+                                className={`bg-white/80 dark:!bg-black/60 !text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 transition-all duration-1000 transform ${hovered === index ? "md:translate-y-[-40px]" : ""
                                     }`}
                                 onMouseEnter={() => setHovered(index)}
                                 onMouseLeave={() => setHovered(null)}
@@ -76,9 +80,9 @@ export const Especialidades = () => {
                         </Tooltip>
                     ))}
                     <Tooltip key={"tooltip-mas"} content={"ver mas"}>
-                            <Link
+                            <Link onClick={handleClick}
                                 to={"/especialidades"}
-                                className={`!text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === "m" ? "md:translate-y-[-40px]" : ""
+                                className={`bg-white/80 dark:!bg-black/60 !text-5xl flex justify-center items-center !border !border-gray-400 dark:!border-gray-800 w-40 h-40 bg-trasnparent transition-all duration-1000 transform ${hovered === "m" ? "md:translate-y-[-40px]" : ""
                                     }`}
                                 onMouseEnter={() => setHovered("m")}
                                 onMouseLeave={() => setHovered(null)}

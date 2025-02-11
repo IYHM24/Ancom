@@ -24,14 +24,14 @@ export const mapRoutes = [
         }
     },
     {
-        nombre: "Planes",
+        nombre: "Servicios",
         accesibleSinRegistro: true,
         path:{
-            path:"/planes",
+            path:"/servicios",
             component: PlanesComponente
         }
-    },
-    {
+    }
+    /* {
         nombre: "Proyectos",
         accesibleSinRegistro: true,
         path:{
@@ -46,6 +46,6 @@ export const mapRoutes = [
             path:"/canal",
             component: ProfeAndresComponente
         }
-    }
+    } */
 ]
 

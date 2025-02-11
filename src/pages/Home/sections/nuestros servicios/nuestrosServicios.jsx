@@ -69,7 +69,7 @@ export const NuestrosServicios = () => {
                       transition={{ duration: 0.8, ease: "easeOut" }} // Duración y suavidad de la animación
                       viewport={{ once: true }} // Solo se ejecuta una vez
                       key={feature.name} 
-                      className="bg-white/80 dark:!bg-black/60 !relative !overflow-hidden !rounded-lg !border !bg-background !p-8 !border-gray-500 dark:!border-gray-800 "
+                      className="!bg-gray-100/50 dark:!bg-gray-800/50 !relative !overflow-hidden !rounded-lg !border !bg-background !p-8 !border-gray-500 dark:!border-gray-800 "
                     >
                         <div className="!flex !items-center !gap-4 ">
                             <feature.icon className="h-8 w-8" />

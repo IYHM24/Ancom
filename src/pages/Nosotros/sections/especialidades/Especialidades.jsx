@@ -94,7 +94,7 @@ export const Especialidades = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="bg-white dark:bg-black !rounded-2xl !shadow-xl !p-6 hover:!shadow-2xl !transition-shadow"
+                            className="!bg-gray-100/50 dark:!bg-gray-800/50 !rounded-2xl !shadow-xl !p-6 hover:!shadow-2xl !transition-shadow"
                         >
                             <div className="flex items-center gap-4 !mb-6">
                                 <div className={`!p-3 rounded-xl ${tech.color}`}>
@@ -146,7 +146,7 @@ export const Especialidades = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3, delay: index * 0.1 }}
-                            className="bg-white dark:bg-black !p-4 !rounded-xl !shadow-lg text-center group hover:!bg-gradient-to-br hover:!bg-blue-500 dark:hover:!bg-blue-800 !transition-all !duration-300"
+                            className="!bg-gray-100/50 dark:!bg-gray-800/50 !p-4 !rounded-xl !shadow-lg text-center group hover:!bg-gradient-to-br hover:!bg-blue-500 dark:hover:!bg-blue-800 !transition-all !duration-300"
                         >
                             <div className="flex justify-center !mb-2">
                                 <service.icon className="!w-6 !h-6 !text-blue-500 group-hover:!text-white !transition-colors" />

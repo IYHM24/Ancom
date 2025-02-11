@@ -66,7 +66,7 @@ export const CreatorProfile = () => {
                         transition={{ duration: 0.6 }}
                         className="md:col-span-4"
                     >
-                        <div className="bg-white dark:bg-black !rounded-2xl !shadow-xl !overflow-hidden">
+                        <div className="!bg-gray-100/50 dark:!bg-gray-800/50 !rounded-2xl !shadow-xl !overflow-hidden">
                             <div className="!h-32 !bg-gradient-to-r from-purple-500 to-blue-500 dark:from-purple-700 dark:to-blue-700" />
                             <div className="!relative !px-6 !pb-6">
                                 <div className="!absolute !-top-16 !left-1/2 !transform !-translate-x-1/2">
@@ -104,7 +104,7 @@ export const CreatorProfile = () => {
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className="!mt-8 bg-white dark:bg-black !p-6 !rounded-2xl !shadow-xl"
+                            className="!mt-8 !bg-gray-100/50 dark:!bg-gray-800/50 !p-6 !rounded-2xl !shadow-xl"
                         >
                             <div className="!text-4xl !mb-4">"</div>
                             <p className="!italic !text-gray-700 dark:!text-gray-300">
@@ -119,7 +119,7 @@ export const CreatorProfile = () => {
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className="flex flex-col gap-2 !mt-8 bg-white dark:bg-black !p-6 !rounded-2xl !shadow-xl"
+                            className="flex flex-col gap-2 !mt-8 !bg-gray-100/50 dark:!bg-gray-800/50 !p-6 !rounded-2xl !shadow-xl"
                         >
                             
                             <p className="!italic !text-gray-700 dark:!text-gray-300">
@@ -146,7 +146,7 @@ export const CreatorProfile = () => {
                         className="md:col-span-8"
                     >
                         {/* About Me */}
-                        <div className="bg-white dark:bg-black !p-8 rounded-2xl !shadow-xl !mb-8">
+                        <div className="!bg-gray-100/50 dark:!bg-gray-800/50 !p-8 rounded-2xl !shadow-xl !mb-8">
                             <h3 className="!text-2xl !font-bold !mb-4">Sobre Mí</h3>
                             <p className=" !text-gray-700 dark:!text-gray-300 !mb-6">
                                 Con una sólida formación en desarrollo web y una pasión por la innovación tecnológica, me especializo en
@@ -175,7 +175,7 @@ export const CreatorProfile = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                     viewport={{ once: true }}
-                                    className="bg-white dark:bg-black !p-6 !rounded-2xl !shadow-xl"
+                                    className="!bg-gray-100/50 dark:!bg-gray-800/50 !p-6 !rounded-2xl !shadow-xl"
                                 >
                                     <div className="flex items-center gap-4 !mb-4">
                                         <div className={`!p-3 rounded-xl ${skill.color}`}>

@@ -77,7 +77,7 @@ export const PreInicio = () => {
                                 transition={{ delay: 0.4 + indice * 0.2, duration: 0.6 }}
                                 whileHover={{ scale: 1.05 }}
                                 key={indice}
-                                className="flex gap-5 flex-col md:w-full !relative !overflow-hidden !rounded-lg !border !bg-background !p-8 !border-gray-500 dark:!border-gray-800 "
+                                className="!bg-gray-100/50 dark:!bg-gray-800/50 flex gap-5 flex-col md:w-full !relative !overflow-hidden !rounded-lg !border !bg-background !p-8 !border-gray-500 dark:!border-gray-800 "
                             >
                                 <Subtitulo className={"!text-center"}>{carta.titulo}</Subtitulo>
                                 <Parrafo className={"!text-center"}>

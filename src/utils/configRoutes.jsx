@@ -17,6 +17,7 @@ const ProfeAndresComponente = (props) => <ProfeAndres {...props} />
 export const mapRoutes = [
     {
         nombre: "Nosotros",
+        accesibleSinRegistro: true,
         path:{
             path:"/nosotros",
             component: NosotrosComponente
@@ -24,6 +25,7 @@ export const mapRoutes = [
     },
     {
         nombre: "Planes",
+        accesibleSinRegistro: true,
         path:{
             path:"/planes",
             component: PlanesComponente
@@ -31,6 +33,7 @@ export const mapRoutes = [
     },
     {
         nombre: "Proyectos",
+        accesibleSinRegistro: true,
         path:{
             path:"/proyectos",
             component: ProyectosComponente
@@ -38,6 +41,7 @@ export const mapRoutes = [
     },
     {
         nombre: "Canal",
+        accesibleSinRegistro: true,
         path:{
             path:"/canal",
             component: ProfeAndresComponente

@@ -81,7 +81,7 @@ export const TimelineSection = () => {
                                 <div className={`md:!w-5/12 ${index % 2 === 0 ? "!md:pr-8" : "!md:pl-8"}`}>
                                     <motion.div
                                         whileHover={{ scale: 1.02 }}
-                                        className="!bg-gray-100/50 dark:!bg-gray-800/50 !p-6 !rounded-lg !shadow-lg hover:!shadow-xl !transition-shadow"
+                                        className="!bg-gray-100 dark:!bg-gray-800 !p-6 !rounded-lg !shadow-lg hover:!shadow-xl !transition-shadow"
                                     >
 
                                         <div className="!flex !items-center !gap-4 !mb-4">
